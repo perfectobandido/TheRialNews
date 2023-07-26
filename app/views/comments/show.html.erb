@@ -1,0 +1,9 @@
+<%= render @comment %>
+
+<div>
+  <%= link_to "Ir a listado de Comentarios", comments_path %>
+
+
+  <%= link_to "Editar comentario", edit_comment_path(@comment) %> 
+  <%= button_to "Borrar comentario", @comment, method: :delete %>
+</div>

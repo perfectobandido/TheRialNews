@@ -1,0 +1,70 @@
+/* Custom styles for the fixed navbar */
+
+.navbar {
+  background-color: #000000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
+.navbar-brand {
+  padding: 5px;
+}
+
+.navbar-title img {
+  height: 50px; /* Altura del logo */
+}
+.navbar-title {
+  left: 100;
+  color: #fff;
+  font-size: 25px; /* Tamaño de la fuente */
+  font-style: italic;
+  margin: 0;
+  line-height: 20px; /* Altura de la barra de navegación */
+}
+
+
+
+.navbar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  padding: 0;
+}
+
+.navbar-menu li {
+  margin-right: 10px;
+}
+
+.navbar-menu li a {
+  text-decoration: none;
+  color: #000000;
+  
+}
+
+/* Estilos adicionales para la apariencia de la navbar */
+body {
+  background-color: #f8f8f8;
+  height: 1500px; /* Solo para probar el efecto fijo */
+}
+
+.navbar {
+  transition: background-color 0.3s ease-in-out;
+}
+
+.navbar.scrolled {
+  background-color: rgba(0, 0, 0, 0.7);
+}
